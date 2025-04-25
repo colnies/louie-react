@@ -19,12 +19,12 @@ This project converts a traditional HTML website into a modern React Single Page
 
 1. Clone the repository or download the zip file
 ```
-git clone https://github.com/yourusername/louie-the-corgi.git
+git clone https://github.com/colnies/louie-react.git
 ```
 
 2. Navigate to the project directory
 ```
-cd louie-the-corgi
+cd louie-react
 ```
 
 3. Install dependencies
@@ -42,7 +42,7 @@ npm start
 ## Project Structure
 
 ```
-louie-the-corgi/
+louie-react/
 ├── public/           # All website images     
 ├── src/
 │   ├── components/   # Reusable components

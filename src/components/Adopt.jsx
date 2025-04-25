@@ -7,7 +7,8 @@ function Adopt() {
       <div className="adopt-resources">
         <h1 className="adopt-heading">Adoption Resources</h1>
         <p>
-          Adopting a pet can mean a big life change for even the most experienced pet owner. Fortunately there are many free resources available online to help with quick questions and to get you on your way.
+          Adopting a pet can mean a big life change for even the most experienced pet owner.
+          Fortunately there are many free resources available online to help with quick questions and to get you on your way.
         </p>
         <div className="adopt-content">
           <h2 className="adopt-heading">For Potential Adopters</h2>
@@ -23,7 +24,7 @@ function Adopt() {
               </a>
             </li>
             <li>
-                              <a href="https://www.aspca.org/pet-care/general-pet-care/cutting-pet-care-costs" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.aspca.org/pet-care/general-pet-care/cutting-pet-care-costs" target="_blank" rel="noopener noreferrer">
                 What are the costs of caring for a pet?
               </a>
             </li>

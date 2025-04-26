@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/styles.css';
+import Community from './Community';
 
 function Home() {
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
@@ -282,24 +283,7 @@ function Home() {
       </section>
       
       {/* Community Section */}
-      <section className="community-section">
-        <div className="community-content">
-          <p className="section-left-label">Community</p>
-          <h2 className="section-left-title">Join Louie's Mission!</h2>
-          <p className="community-description">
-            Ready to help senior dogs?<br />
-            Adopt, foster, or donate to make a difference today!
-          </p>
-          
-          <form className="subscribe-form">
-            <input type="email" placeholder="Enter your email" className="email-input" />
-            <button type="submit" className="subscribe-button">Subscribe</button>
-          </form>
-        </div>
-        <div className="community-image">
-          <img src="/louie-happy.png" alt="Louie happy" className="louie-community-image" />
-        </div>
-      </section>
+      <Community />
     </>
   );
 }

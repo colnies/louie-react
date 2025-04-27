@@ -18,13 +18,11 @@ function Home() {
       quote: "Our rescue dog Max has brought so much joy to our family. He reminds us daily that love is the greatest gift you can give.",
       author: "Sarah Johnson",
       location: "Portland, OR",
-      image: "/testimonial-2.png"
     },
     {
       quote: "Fostering has been such a rewarding experience. Each dog we help find a forever home fills our hearts with purpose.",
       author: "Miguel Rodriguez",
       location: "Austin, TX",
-      image: "/testimonial-3.png"
     }
   ];
 
@@ -211,13 +209,15 @@ function Home() {
                 <p className="testimonial-author">{testimonials[currentTestimonialIndex].author}</p>
                 <p className="testimonial-location">{testimonials[currentTestimonialIndex].location}</p>
               </div>
-              <div className="testimonial-image">
-                <img 
-                  src={testimonials[currentTestimonialIndex].image} 
-                  alt="Testimonial" 
-                  className="author-image" 
-                />
-              </div>
+              {testimonials[currentTestimonialIndex].image && (
+                <div className="testimonial-image">
+                    <img 
+                    src={testimonials[currentTestimonialIndex].image} 
+                    alt="Testimonial" 
+                    className="author-image" 
+                    />
+                </div>
+              )}
             </div>
             
             <div className="testimonial-nav">

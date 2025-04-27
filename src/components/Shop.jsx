@@ -4,13 +4,13 @@ import '../css/styles.css';
 
    const Shop = () => {
        const products = [
-           { id: 1, name: 'Tote Bag', price: 40.00, image: '../public/tote-bag.png' },
-           { id: 2, name: 'T-Shirt', price: 30.00, image: '../public/tshirt.png' },
-           { id: 3, name: 'Metal Cup', price: 15.00, image: '../public/metal-cup.png', sale: true },
-           { id: 4, name: 'Cap', price: 15.00, image: '../public/cap.png' },
-           { id: 5, name: 'Pin', price: 7.00, image: '../public/pin.png' },
-           { id: 6, name: 'Notebook', price: 9.00, image: '../public/notebook.png' },
-           { id: 7, name: 'Pillow Cover', price: 13.00, image: '../public/pillow-cover.png' },
+           { id: 1, name: 'Tote Bag', price: 40.00, image: '/tote-bag.png' },
+           { id: 2, name: 'T-Shirt', price: 30.00, image: '/tshirt.png' },
+           { id: 3, name: 'Metal Cup', price: 15.00, image: '/metal-cup.png', sale: true },
+           { id: 4, name: 'Cap', price: 15.00, image: '/cap.png' },
+           { id: 5, name: 'Pin', price: 7.00, image: '/pin.png' },
+           { id: 6, name: 'Notebook', price: 9.00, image: '/notebook.png' },
+           { id: 7, name: 'Pillow Cover', price: 13.00, image: '/pillow-cover.png' },
        ];
 
        // Memory Game Logic (Copied and adapted from your game.js)
@@ -20,12 +20,12 @@ import '../css/styles.css';
        const [message, setMessage] = useState('');
 
        const images = [
-           '../public/max.png',
-           '../public/louie-resting.png',
-           '../public/the-boss.png',
-           '../public/bella1.jpg',
-           '../public/buddy1.jpg',
-           '../public/max1.jpg'
+           '/max.png',
+           '/louie-resting.png',
+           '/the-boss.png',
+           '/bella1.jpg',
+           '/buddy1.jpg',
+           '/max1.jpg'
        ];
 
        useEffect(() => {

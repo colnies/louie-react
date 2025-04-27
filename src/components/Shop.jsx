@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-   import '../App.css'; // Import global styles
-   import './Shop.css'; // Import shop-specific styles
+import '../css/styles.css';
 
 
    const Shop = () => {

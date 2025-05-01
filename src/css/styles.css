@@ -1134,6 +1134,15 @@ body {
     .favorites-section {
         padding: 40px 30px;
     }
+
+    .adopt-form-container {
+        padding: 20px;
+        margin-top: 20px;
+    }
+    
+    .adopt-form {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1169,6 +1178,9 @@ body {
         grid-gap: 8px;
     }
 
+    .form-submit-btn {
+        width: 100%;
+    }
 }
 
 /* Shop Page Styles */
@@ -1253,4 +1265,92 @@ body {
 
 #restart-button:hover { 
     background-color: #EE8335;
+}
+
+/* Adopt Form Styles */
+.adopt-form-container {
+    background: linear-gradient(to bottom, #F0D1AD, #FAF9F6);
+    border-radius: 16px;
+    padding: 30px;
+    margin-top: 40px;
+    margin: 30px;
+}
+
+.adopt-form-intro {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: Inter;
+    max-width: 90%;
+}
+
+.adopt-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 500;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Inter;
+    background-color: white;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-submit-btn {
+    background-color: #000;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Inter;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.form-submit-btn:hover {
+    background-color: #333;
+}
+
+.form-success {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.form-success p {
+    font-size: 18px;
+    font-family: Inter;
+    color: #003366;
+}
+
+.response {
+    text-align: center;
+    margin-bottom: 20px;
 }

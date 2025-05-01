@@ -12,23 +12,14 @@ function AdoptForm() {
 
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
 
-    // Where we want to call axios to send the data to your backend
-
+    // Where we want to call axios to send the data to the backend
 
     setSubmitted(true);
-    
+
     setTimeout(() => {
       setFormData({
         name: '',
@@ -62,7 +53,7 @@ function AdoptForm() {
               id="name" 
               name="name" 
               value={formData.name}
-              onChange={handleChange}
+              onChange={}
               className="form-input"
               required
             />
@@ -75,7 +66,7 @@ function AdoptForm() {
               id="email" 
               name="email" 
               value={formData.email}
-              onChange={handleChange}
+              onChange={}
               className="form-input"
               required
             />
@@ -88,7 +79,7 @@ function AdoptForm() {
               id="phone" 
               name="phone" 
               value={formData.phone}
-              onChange={handleChange}
+              onChange={}
               className="form-input"
               required
             />
@@ -100,7 +91,7 @@ function AdoptForm() {
               id="involvement" 
               name="involvement" 
               value={formData.involvement}
-              onChange={handleChange}
+              onChange={}
               className="form-select"
             >
               <option value="adopt">I want to adopt</option>
@@ -117,7 +108,7 @@ function AdoptForm() {
               id="details" 
               name="details" 
               value={formData.details}
-              onChange={handleChange}
+              onChange={}
               className="form-textarea"
               rows="4"
               placeholder="Tell us a bit about yourself, your living situation, and any specific questions you may have."

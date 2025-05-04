@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root', // MySQL username
-    password: 'admin', // MySQL password
+    password: '', // MySQL password
     database: 'testdb', // database name
 });
 db.connect((err) => {
@@ -21,12 +21,12 @@ db.connect((err) => {
 
 // Route to insert data
 app.post('/submit', (req, res) => {
-    const { name, email, phone, age } = req.body;
-    const sql = 'INSERT INTO adopt (name, email, phone, involvement, details) VALUES (?, ?, ?, ?, ?)';
-    db.query(sql, [name, email, phone, involvement, details], (err, result) => {
-        if (err) return res.status(500).send(err);
-        res.send({ message: 'User added!', result });
-    });
+  const { name, email, phone, involvement, details } = req.body;
+  const sql = 'INSERT INTO adopt (name, email, phone, involvement, details) VALUES (?, ?, ?, ?, ?)';
+  db.query(sql, [name, email, phone, involvement, details], (err, result) => {
+    if (err) return res.status(500).send(err);
+    res.send({ message: 'User added!', result });
+  });
 });
 
 app.get('/adopt', (req, res) => {
